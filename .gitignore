@@ -1,0 +1,13 @@
+### C++ ###
+
+# Prerequisites
+*.d
+*.DS_Store
+
+# Build folders
+/build/
+
+# Executables
+*.exe
+*.out
+*.app
