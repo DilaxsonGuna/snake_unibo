@@ -1,0 +1,3 @@
+/Users/Dixi/Projects/Progetti_Uni/Programmazione/build/CMakeFiles/SnakeGame.dir
+/Users/Dixi/Projects/Progetti_Uni/Programmazione/build/CMakeFiles/edit_cache.dir
+/Users/Dixi/Projects/Progetti_Uni/Programmazione/build/CMakeFiles/rebuild_cache.dir
