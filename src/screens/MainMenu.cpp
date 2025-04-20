@@ -1,6 +1,5 @@
 #include <iostream>
 #include "MainMenu.h"
-#include <ncurses.h>
 using namespace std;
 
 MainMenu::MainMenu() : Interface() {}

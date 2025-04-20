@@ -14,6 +14,7 @@ add_executable(SnakeGame
     src/screens/MainMenu.cpp
     src/screens/Interface.cpp
     src/screens/Game.cpp
+    src/characters/Snake.cpp
 )
 
 # Link ncurses library

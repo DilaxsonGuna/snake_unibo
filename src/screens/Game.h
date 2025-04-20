@@ -2,12 +2,14 @@
 #define GAME_H
 
 #include "Interface.h"
+using namespace std;
 
 class Game: public Interface{
 protected:
+    vector<vector<bool>> grid;
 public:
     Game();
-    bool initializeGrid(int height, int width);
+    void initializeGrid(int height, int width);
     void game();
 };
 

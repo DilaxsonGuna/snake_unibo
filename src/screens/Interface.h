@@ -9,10 +9,10 @@ protected:
     int width;
     WINDOW *board;
 public:
-Interface();               
+    Interface();               
 
-void createBoard();      
-void renderBoard();      
+    void createBoard();      
+    void renderBoard();      
 };
 
 #endif

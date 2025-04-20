@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Interface.h"
-#include <ncurses.h>
 using namespace std;
 
 Interface::Interface() {

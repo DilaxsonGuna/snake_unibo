@@ -1,14 +1,13 @@
 #include <iostream>
 #include "Game.h"
-#include <ncurses.h>
+#include "../characters/Snake.h"
 using namespace std;
 
 Game::Game() : Interface() {}
 
-bool Game::initializeGrid(int height, int width)
+void Game::initializeGrid(int height, int width)
 {
-    bool grid [height][width];
-    return grid;
+    grid = vector<vector<bool>>(height, vector<bool>(width, false));
 }
 
 void Game::game(){
@@ -17,8 +16,20 @@ void Game::game(){
     initializeGrid(height, width);
     if (height > 11 && width > 21)
     {
-        mvwprintw(board, height/2, width/2, "game started");
-        
+        Snake snake(grid, board);
+        int ch;
+        while (1){
+            ch = wgetch(board);
+            if (ch == 'q')
+            {
+                mvwprintw(board, height/2, width/2, "exit");
+                break;
+            }
+            else
+            {
+                snake.move(board, ch);
+            }
+        }
         wrefresh(board);
         wgetch(board);
     }
